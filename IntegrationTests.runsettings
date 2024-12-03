@@ -1,0 +1,12 @@
+<RunSettings>
+    <RunConfiguration>
+        <MaxCpuCount>0</MaxCpuCount>
+        <DisableParallelization>true</DisableParallelization>
+    </RunConfiguration>
+     <!-- Parameters used by tests at runtime -->
+  <TestRunParameters>
+    <Parameter name="ServerName" value="localhost" />
+    <Parameter name="User" value="sa" />
+    <Parameter name="Password" value="(yourPassword!)" />
+  </TestRunParameters>
+</RunSettings>

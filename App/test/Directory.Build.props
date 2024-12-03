@@ -1,0 +1,5 @@
+<Project>
+	<PropertyGroup Condition="$(MSBuildProjectName.EndsWith('.IntegrationTests'))">
+		<RunSettingsFilePath>$(SolutionDir)..\IntegrationTests.runsettings</RunSettingsFilePath>
+	</PropertyGroup>
+</Project>

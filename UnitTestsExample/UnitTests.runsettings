@@ -1,0 +1,12 @@
+<RunSettings>
+    <!-- MSTest adapter -->
+    <MSTest>
+        <Parallelize>
+            <Workers>4</Workers>
+            <Scope>MethodLevel</Scope>
+        </Parallelize>
+    </MSTest>
+    <RunConfiguration>
+        <MaxCpuCount>0</MaxCpuCount>
+    </RunConfiguration>
+</RunSettings>
