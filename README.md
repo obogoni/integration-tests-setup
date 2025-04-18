@@ -88,7 +88,7 @@ This approach limits what you can do in a lot of ways. First off, in my case we 
 Sharing the same external dependency between tests at the same time can cause a lot of unexpected errors. I tried to be as conservative as possible with this, so I disabled test parallelism for all integration tests by default. Using .runsettings files Directory.Build.props conditions, I've created a convention to allow unit tests and integration tests to run with different configurations as long as they are kept in different projects. Basically, tests in projects with the .UnitTests suffix will run parallel while tests in projects ending with .IntegrationTests won't. You can see an example of that in the [UnitTestsExample](./UnitTestsExample/) folder.
 
 ### Test Isolation
-I would argue that defining one concrete environment (ITestFixture) per test class is the best approach. That way each test suite is responsable for its own test environment. I write the base test class with that scenario in mind. Under the hood, each database will have a unique identifier prepended to its name to ensure there's no colision in the SQL Server instance for the same database. So you could create as many environments as you'd like.
+I would argue that defining one concrete environment (ITestFixture) per test class is the best approach. That way each test suite is responsable for its own test environment. I wrote the base test class with that scenario in mind. Under the hood, each database will have a unique identifier prepended to its name to ensure there's no colision in the SQL Server instance for the same database. So you could create as many environments as you'd like.
 
 ## Conclusion
 
